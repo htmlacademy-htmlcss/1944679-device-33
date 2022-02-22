@@ -254,7 +254,7 @@ body {
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
-.useful-info-wrapper {
+.useful-info-container {
   padding: 0;
   margin: 0;
   width: 100%;
@@ -262,8 +262,7 @@ body {
 }
 
 .useful-info {
-  width: 1160px;
-  display: flex;
+  width: 880px;
   margin: 0 auto;
   background-color: #F0F0F0;
 }
@@ -530,3 +529,9 @@ body {
   background-position: right;
 }
 
+.useful-info-wrapper {
+  width: 1160px;
+  margin: 0 auto;
+  background-color: #F0F0F0;
+  display: flex;
+}
