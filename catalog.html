@@ -10,7 +10,7 @@
             <a class="navigation-logo" href="index.html">
                 <img class="logo" src="images/logo_header.svg" width="145" height="36" alt="Device">
             </a>
-            <nav class="navigation">
+            <nav class="navigation-header-top">
                 <form class="search-form" action="https://echo.htmlacademy.ru/" method="get">
                     <label for="form-search" class="visually-hidden">Поиск</label>
                     <input class="field" placeholder="Текст поиска" type="text" name="search" id="form-search" required>
@@ -25,15 +25,15 @@
                   <span class="navigation-login-title">Выйти</span>
                 </button>
                 <ul class="navigation-user">
-                    <li class="navigation-item">
+                    <li class="navigation-item-user">
                         <a class="navigation-link" href="#">Сравнить</a>
                     </li>
-                    <li class="navigation-item">
+                    <li class="navigation-item-user">
                         <a class="navigation-link" href="#">Корзина</a>
                     </li>
                 </ul>
             </nav>
-            <nav class="navigation">
+            <nav class="navigation-header-bottom">
                 <div class="navigation-catalog">
                     <a class="link" href="catalog.html">Каталог товаров</a>
                 </div>
@@ -52,7 +52,7 @@
         </header>
         <main class="main-container">
             <header class="inner-header">
-                <h1 class="title">Моноподы для селфи</h1>
+                <h1 class="title title-page">Моноподы для селфи</h1>
                 <ol class="breadcrumbs">
                     <li class="breadcrumbs-item">
                         <a class="breadcrumbs-link" href="index.html">Главная</a>
@@ -129,12 +129,14 @@
                         <section class="sort">
                             <h2 class="sort-title">Сортировка:</h2>
                             <button class="sort-button-popular" type="button">Популярные</button>
+                          <div>
                             <button class="sort-button min" type="button">
                                 <span class="visually-hidden">убывание</span>
                             </button>
                             <button class="sort-button max" type="button">
                                 <span class="visually-hidden">возрастание</span>
                             </button>
+                          </div>
                         </section>
                         <section class="product">
                             <h2 class="visually-hidden">Продукция</h2>
@@ -170,12 +172,10 @@
                             </ul>
                             <button class="button-load" type="button">Загрузить ещё</button>
                             <div class="pagination">
+                                <a class="pagination-prev pagination-disabled">
+                                  <span class="link">Назад</span>
+                                </a>
                                 <ul class="pagination-list">
-                                    <li class="pagination-item">
-                                        <a class="pagination-prev pagination-disabled">
-                                            <span class="link">Назад</span>
-                                        </a>
-                                    </li>
                                     <li class="pagination-item">
                                         <a class="pagination-link pagination-current">1</a>
                                     </li>
@@ -191,12 +191,10 @@
                                     <li class="pagination-item">
                                         <a class="pagination-link" href="#">15</a>
                                     </li>
-                                    <li class="pagination-item">
-                                        <a class="pagination-next" href="#">
-                                            <span class="link">Вперед</span>
-                                        </a>
-                                    </li>
                                 </ul>
+                                <a class="pagination-next" href="#">
+                                  <span class="link">Вперед</span>
+                                </a>
                             </div>
                         </section>
                     </div>
@@ -208,13 +206,13 @@
                 <img class="footer-contacts-logo" src="images/logo_footer.svg" width="145" height="36" alt="Device">
                 <div class="footer-contacts-wrapper">
                     <section class="footer-contacts">
-                        <!--<h2 class="visually-hidden">Контакты</h2>-->
+                        <h2 class="visually-hidden">Контакты</h2>
                         <address class="footer-contacts-address">
                             <p class="address">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
                         </address>
                     </section>
                     <section class="footer-navigation">
-                        <ul class="navigation-list">
+                        <ul class="navigation-list-footer">
                             <li class="navigation-item">
                                 <a class="link navigator-link-footer" href="#">Доставка</a>
                             </li>
@@ -230,7 +228,7 @@
                 </div>
                 <div class="footer-link-wrapper">
                     <section class="footer-social">
-                        <!--<h2 class="visually-hidden">Социальные сети</h2>-->
+                        <h2 class="visually-hidden">Социальные сети</h2>
                         <ul class="footer-social-list">
                             <li class="footer-social-item">
                                 <a class="button-social" href="https://www.facebook.com/htmlacademy">
