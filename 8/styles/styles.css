@@ -206,6 +206,11 @@ body {
   padding: 10px 24px 10px 0;
 }
 
+.category-product-list {
+  width: 160px;
+  padding: 0;
+}
+
 .button{
   font-family: "Raleway", sans-serif;
   text-decoration: none;
@@ -316,9 +321,8 @@ body {
   flex-direction: column;
 }
 
-.category-product-list {
-  width: 160px;
-  padding: 0;
+.product-card-image {
+ object-fit: cover;
 }
 
 .product-card-content {
