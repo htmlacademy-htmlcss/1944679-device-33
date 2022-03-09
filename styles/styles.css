@@ -56,7 +56,6 @@ body {
   margin: 0 auto;
   margin-top: 40px;
   background-color: #FFE17F;
-  z-index: -2;
 }
 
 .page-container {
@@ -408,7 +407,6 @@ body {
   color: #FFFFFF;
   top: 82px;
   right: 48px;
-  z-index: -1;
 }
 
 .title {
@@ -421,6 +419,7 @@ body {
 
 .slide-number-title {
   z-index: 1;
+  position: relative;
 }
 
 .description {
