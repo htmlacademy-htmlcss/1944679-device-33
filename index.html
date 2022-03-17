@@ -16,7 +16,7 @@
             <nav class="navigation-header-top">
                 <form class="search-form" action="https://echo.htmlacademy.ru/" method="get">
                     <label for="form-search" class="visually-hidden">Поиск</label>
-                    <input class="search-form-field" placeholder="Текст поиска" type="text" name="search" id="form-search" required>
+                    <input class="search-form-field" placeholder="Поиск по сайту" type="text" name="search" id="form-search" required>
                     <button class="search-button" type="submit">
                         <span class="search-button-title">Найти</span>
                     </button>
@@ -51,12 +51,61 @@
                           </svg>
                           <span>Корзина</span>
                         </a>
+                        <div class="popover popover-basket">
+                            <ul class="basket-items-list">
+                                <li class="basket-item" tabindex="0">
+                                    <span class="basket-item-title basket-items-image-1">Любительская селфи&#8209;палка</span>
+                                    <button class="basket-item-delete" tabindex="0">
+                                        <span class="visually-hidden">Удалить</span>
+                                    </button>
+                                </li>
+                                <li class="basket-item" tabindex="0">
+                                    <span class="basket-item-title basket-items-image-2">Профессиональная селфи&#8209;палка</span>
+                                    <button class="basket-item-delete" tabindex="0">
+                                        <span class="visually-hidden">Удалить</span>
+                                    </button>
+                                </li>
+                            </ul>
+                            <div class="basket-result">
+                                <span class="basket-result-quantity">Товаров: 2</span>
+                                <span class="basket-result-sum">Сумма: 2000 ₽</span>
+                            </div>
+                            <button class="basket-button-open">
+                              <span class="button button-open-title">открыть корзину</span>
+                            </button>
+                        </div>
                     </li>
                 </ul>
             </nav>
             <nav class="navigation-header-bottom">
               <div class="navigation-catalog">
                 <a class="link-catalog" href="catalog.html">Каталог товаров</a>
+                <div class="popover-catalog popover-catalog-exit">
+                    <ul class="popover-catalog-list">
+                        <li class="popover-catalog-item" tabindex="0">
+                            <a class="popover-catalog-link">Виртуальная реальность</a>
+                        </li>
+                        <li class="popover-catalog-item" tabindex="0">
+                            <a class="popover-catalog-link">Моноподы для селфи</a>
+                        </li>
+                        <li class="popover-catalog-item" tabindex="0">
+                            <a class="popover-catalog-link">Экшн-камеры</a>
+                        </li>
+                    </ul>
+                    <ul class="popover-catalog-list popover-catalog-list-2">
+                        <li class="popover-catalog-item" tabindex="0">
+                            <a class="popover-catalog-link">Фитнес-браслеты</a>
+                        </li>
+                        <li class="popover-catalog-item" tabindex="0">
+                            <a class="popover-catalog-link">Умные часы</a>
+                        </li>
+                    </ul>
+                    <ul class="popover-catalog-list">
+                        <li class="popover-catalog-item" tabindex="0">
+                            <a class="popover-catalog-link">Квадрокоптеры</a>
+                        </li>
+                    </ul>
+                </div>
               </div>
               <ul class="navigation-list">
                 <li class="navigation-item">
@@ -75,17 +124,34 @@
             <div class="page-container">
                 <h1 class="visually-hidden">Интернет-магазин Device</h1>
                 <section class="slider">
+                  <button class="slider-button slider-prev" type="button">
+                    <span class="visually-hidden">Предыдущее фото</span>
+                  </button>
+                  <button class="slider-button slider-next" type="button">
+                    <span class="visually-hidden">Следующее фото</span>
+                  </button>
+                  <ol class="slider-pagination">
+                    <li class="slider-pagination-item" tabindex="0">
+                      <button class="slider-pagination-button slide-button-1" type="button">
+                        <span class="visually-hidden">1 слайд</span>
+                      </button>
+                    </li>
+                    <li class="slider-pagination-item" tabindex="0">
+                      <button class="slider-pagination-button" type="button">
+                        <span class="visually-hidden">2 слайд</span>
+                      </button>
+                    </li>
+                    <li class="slider-pagination-item" tabindex="0">
+                      <button class="slider-pagination-button" type="button">
+                        <span class="visually-hidden">3 слайд</span>
+                      </button>
+                    </li>
+                  </ol>
                     <h2 class="visually-hidden">Слайдер</h2>
-                    <section class="slide">
+                    <section class="slide slide-1">
                         <div class="slide-wrapper">
                             <h3 class="visually-hidden">Квадрокоптер</h3>
-                            <button class="slider-button slider-prev" type="button">
-                                <span class="visually-hidden">Предыдущее фото</span>
-                            </button>
                             <img src="images/slider-1.png" width="560" height="560" alt="квадрокоптер">
-                            <button class="slider-button slider-next" type="button">
-                                <span class="visually-hidden">Следующее фото</span>
-                            </button>
                         </div>
                         <div class="description-wrapper">
                             <span class="slide-number">01</span>
@@ -96,23 +162,6 @@
                               <a class="link link-detailed" href="#">
                                 <span>Подробнее</span>
                               </a>
-                              <ol class="slider-pagination">
-                                <li class="slider-pagination-item" tabindex="0">
-                                  <button class="slider-pagination-button slide_1" type="button">
-                                    <span class="visually-hidden">1 слайд</span>
-                                  </button>
-                                </li>
-                                <li class="slider-pagination-item" tabindex="0">
-                                  <button class="slider-pagination-button" type="button">
-                                    <span class="visually-hidden">2 слайд</span>
-                                  </button>
-                                </li>
-                                <li class="slider-pagination-item" tabindex="0">
-                                  <button class="slider-pagination-button" type="button">
-                                    <span class="visually-hidden">3 слайд</span>
-                                  </button>
-                                </li>
-                              </ol>
                             </div>
                             <table class="slider-parametrs">
                                 <tr >
@@ -126,14 +175,14 @@
                             </table>
                         </div>
                     </section>
-                    <section class="slide visually-hidden">
+                    <section class="slide slide-2">
                         <div class="slide-wrapper">
                             <h3 class="visually-hidden">Фитнес-браслет</h3>
                             <img src="images/slider-2.png" width="560" height="560" alt="фитнес-браслет">
                         </div>
                         <div class="description-wrapper">
                             <span class="slide-number">02</span>
-                            <b class="title slide-number-title">Худеем правильно!</b>
+                            <b class="title slide-number-title">Худеем <br> правильно!</b>
                             <p class="description description-slider">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.
                             </p>
                             <a class="link link-detailed" href="#">
@@ -149,14 +198,14 @@
                             </table>
                         </div>
                     </section>
-                    <section class="slide visually-hidden">
+                    <section class="slide slide-3">
                         <div class="slide-wrapper">
                             <h3 class="visually-hidden">Селфи-палка</h3>
                             <img src="images/slider-3.png" width="560" height="560" alt="селфи-палка">
                         </div>
                         <div class="description-wrapper">
                             <span class="slide-number">03</span>
-                            <b class="title slide-number-title">Делай селфи, как Бен Стиллер!</b>
+                            <b class="title slide-number-title">Делай селфи,<br>как Бен Стиллер!</b>
                             <p class="description description-slider">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.
                             </p>
                             <a class="link link-detailed" href="#">
@@ -220,14 +269,14 @@
                 </section>
             </div>
           <div class="useful-info-container">
+            <div class="info-button">
+              <button class="info-button-active" type="submit"><span>Доставка</span></button>
+              <button class="useful-info-button useful-info-button-second" type="submit">Гарантия</button>
+              <button class="useful-info-button useful-info-button-third" type="submit">Кредит</button>
+            </div>
               <section class="useful-info-wrapper">
-                    <div class="info-button">
-                      <button class="info-button-active" type="submit"><span>Доставка</span></button>
-                      <button class="useful-info-button useful-info-button-second" type="submit">Гарантия</button>
-                      <button class="useful-info-button useful-info-button-third" type="submit">Кредит</button>
-                    </div>
-                <section class="useful-info">
-                    <div class="useful-info-description">
+                  <section class="useful-info">
+                    <div class="useful-info-description useful-info-delivery">
                       <div class="info-wrapper info-wrapper-delivery">
                         <h3 class="title title-info">Доставка</h3>
                         <p class="description info-description">Мы с удовольствием доставим ваш товар прямо
@@ -236,7 +285,7 @@
                         </p>
                       </div>
                     </div>
-                    <div class="useful-info-description visually-hidden">
+                    <div class="useful-info-description useful-info-garanty">
                       <div class="info-wrapper info-wrapper-garanty">
                         <h3 class="title title-info">Гарантия</h3>
                         <p class="description info-description">Если из-за возгорания купленного у нас товара у вас
@@ -245,7 +294,7 @@
                         </p>
                       </div>
                     </div>
-                    <div class="useful-info-description visually-hidden">
+                    <div class="useful-info-description useful-info-credit">
                       <div class="info-wrapper info-wrapper-credit">
                         <h3 class="title title-info">Кредит</h3>
                         <p class="description info-description">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита.
@@ -303,8 +352,8 @@
                     </div>
                     <div class="newsletter-subscribe">
                         <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-                            <label for="newsletter-email">Email</label>
-                            <input class="field" placeholder="Ваш email" type="email" name="newsletter-email" id="newsletter-email" required>
+                            <label for="newsletter-email" class="visually-hidden">Email</label>
+                            <input class="newsletter-email-field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
                             <button class="button newsletter-button" type="submit">Подписаться</button>
                         </form>
                         <span class="description checkbox">Это бесплатно</span>
@@ -370,5 +419,49 @@
                 </div>
             </div>
         </footer>
+        <div class="modal-container modal-container-close">
+            <div class="modal modal-order">
+              <section class="modal-content">
+                <h2 class="modal-title">Доставка под заказ</h2>
+                <button class="modal-close-button">
+                  <span class="visually-hidden">Закрыть</span>
+                </button>
+                <form class="order-form" action="https://echo.htmlacademy.ru/" method="post">
+                  <div class="field-group">
+                      <p class="field-group-line">
+                          <label class="field-input" for="order-login">Ваше имя:</label>
+                          <input class="login-form-field field-order" type="text" id="order-login" name="order-login" placeholder="Введите имя">
+                          <span class="field-group-underline">Добавьте имя</span>
+                      </p>
+                      <p class="field-group-line">
+                          <label class="field-input" for="order-email">Ваш e-mail:</label>
+                          <input class="email-form-field field-order email-red" placeholder="Введите email" value="почта" type="email" name="order-email" id="order-email" required>
+                          <span class="field-group-underline underline-red">Забавный у вас адрес</span>
+                      </p>
+                  </div>
+                  <div class="field-group">
+                      <p class="field-group-line">
+                        <label class="field-input" for="order-product">Что нужно привезти:</label>
+                        <input class="order-form-field field-order" type="text" id="order-product" name="order-product" placeholder="В свободной форме">
+                      </p>
+                      <p class="field-group-line field-pagination">
+                        <button class="field-group-button minus">
+                          <span class="visually-hidden">Минус</span>
+                        </button>
+                        <label class="field-input field-input-icon" for="order-count" tabindex="0">Количество:<span class="icon-hover">Постараемся найти, сколько нужно. Привезём сколько получится по требованиям
+к провозу багажа.</span></label>
+                        <input class="count-form-field field-order" type="text" id="order-count" name="order-count" placeholder="страница" value="1">
+                        <button class="field-group-button plus">
+                          <span class="visually-hidden">Плюс</span>
+                        </button>
+                      </p>
+                  </div>
+                  <p class="field-group">
+                    <button class="field-group-submit" type="submit">Отправить</button>
+                  </p>
+                </form>
+              </section>
+            </div>
+        </div>
     </body>
 </html>
