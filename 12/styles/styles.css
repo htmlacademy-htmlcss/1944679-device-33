@@ -744,7 +744,6 @@ body {
 
 /*useful-info*/
 .useful-info-container {
-  position: relative;
   padding: 0;
   margin: 0;
   width: 100%;
@@ -753,7 +752,6 @@ body {
 }
 
 .useful-info-wrapper {
-  position: absolute;
   width: 1160px;
   margin: 0 auto;
   display: flex;
@@ -762,10 +760,10 @@ body {
 }
 
 .info-button {
-  position: absolute;
+  position: relative;
   width: 280px;
   top: -40px;
-  left: 371px;
+  left: 0;
 }
 
 .info-button::after {
@@ -836,9 +834,9 @@ body {
 }
 
 .useful-info {
-  width: 880px;
+  width: 1160px;
   margin: 0 auto;
-  margin-left: 280px;
+  display: flex;
 }
 
 .useful-info-delivery {
@@ -849,6 +847,8 @@ body {
   display: block;
   width: 880px;
   margin-right: 20px;
+  position: relative;
+  top: -50px;
 }
 
 .useful-info-garanty {
@@ -866,24 +866,24 @@ body {
 .info-wrapper-delivery {
   background-image: url("../images/icon_delivery.svg");
   background-repeat: no-repeat;
-  background-position: 90% 94%;
-  padding-top: 73px;
+  background-position: 93% 85%;
+  padding-top: 20px;
 }
 
 .info-wrapper-garanty {
   background-image: url("../images/icon_garantee.svg");
   background-repeat: no-repeat;
-  background-position: 95% 120%;
-  padding-top: 73px;
+  background-position: 99% -450%;
+  padding-top: 20px;
 }
 
 .info-wrapper-credit {
   position: relative;
   background-image: url("../images/icon_credit.svg");
   background-repeat: no-repeat;
-  background-position: 96% 60%;
-  padding-top: 42px;
-  top: 33px;
+  background-position: 99% 230%;
+  padding-top: 20px;
+  top: 3px;
 }
 
 .title-info {
@@ -892,7 +892,7 @@ body {
 }
 
 .info-description {
-  width: 448px;
+  width: 475px;
   margin: 0;
   padding: 0;
 }
@@ -2081,7 +2081,7 @@ body {
 }
 
 .product-card-link:hover .product-card-image, .product-card-link:active .product-card-image {
-  border: 1px solid #444444;
+  outline: 1px solid #444444;
 }
 
 .product-card:hover .link-product, .product-card:active .link-product {
