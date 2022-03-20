@@ -574,13 +574,17 @@ body {
   cursor: pointer;
   position: relative;
   width: 220px;
+  height: 40px;
   text-align: center;
+  box-sizing: border-box;
+  padding-top: 10px;
+  top: -12px;
 }
 
 .link-detailed::before {
   content:'';
   position: absolute;
-  top: 6px;
+  top: 16px;
   right: 0;
   width: 220px;
   border-top: 8px solid #FFE17F;
@@ -624,7 +628,7 @@ body {
 }
 
 .slider-parametrs {
-  margin-top: 54px;
+  margin-top: 35px;
 }
 
 .slider-parametrs-item {
@@ -659,6 +663,7 @@ body {
   margin-bottom: 185px;
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
@@ -783,6 +788,7 @@ body {
   font-weight: 800;
   color: #000000;
   width: 160px;
+  height: 40px;
   cursor: pointer;
   border: none;
   margin-right: 120px;
@@ -794,7 +800,7 @@ body {
 .useful-info-button::before {
   content: '';
   position: absolute;
-  top: 12px;
+  top: 16px;
   left: 0;
   width: 160px;
   border-top: 8px solid #FFE17F;
@@ -802,11 +808,11 @@ body {
 }
 
 .useful-info-button-second {
-  margin-top: 41px;
+  margin-top: 36px;
 }
 
 .useful-info-button-third {
-  margin-top: 44px;
+  margin-top: 35px;
 }
 
 .useful-info-button:last-child {
@@ -944,7 +950,7 @@ body {
 }
 
 .about-us-delivery {
-  margin-bottom: 37px;
+  margin-bottom: 33px;
   margin-top: 30px;
   padding-left: 35px;
 }
@@ -972,14 +978,17 @@ body {
   font-weight: 800;
   color: #000000;
   min-width: 270px;
+  padding-top: 9px;
+  height: 40px;
   cursor: pointer;
   letter-spacing: 0.2em;
+  box-sizing: border-box;
 }
 
 .link-about-us::before {
   content:'';
   position: absolute;
-  top: 6px;
+  top: 16px;
   width: 270px;
   border-top: 8px solid #FFE17F;
   z-index: -1;
@@ -1032,13 +1041,16 @@ body {
   color: #000000;
   cursor: pointer;
   width: 260px;
-  margin-top: 40px;
+  height: 40px;
+  padding-top: 9px;
+  margin-top: 31px;
+  box-sizing: border-box;
 }
 
 .main-contacts-link::before {
   content:'';
   position: absolute;
-  top: 6px;
+  top: 16px;
   width: 260px;
   border-top: 8px solid #FFE17F;
   z-index: -1;
@@ -1508,7 +1520,7 @@ body {
 
 .control-mark {
   position: absolute;
-  top: 2px;
+  top: 3px;
   left: 0;
   width: 16px;
   height: 16px;
@@ -1556,27 +1568,27 @@ body {
   content: "";
 }
 
-.link-filter-catalog {
+.button-filter-catalog {
   position: relative;
   display: inline-block;
-  width: 220px;
-  cursor: pointer;
-  margin-top: 18px;
-  z-index: 1;
+  top: 8px;
   left: 60px;
+  width: 220px;
+  height: 40px;
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  z-index: 1;
 }
 
-.link-filter-catalog::before {
+.button-filter-catalog::before {
   content:'';
   position: absolute;
-  top: 6px;
+  left: 0;
+  top: 16px;
   width: 220px;
   border-top: 8px solid #FFE17F;
   z-index: -1;
-}
-
-.link-filter-text {
-  padding-left: 50px;
 }
 
 /*sort*/
@@ -1606,10 +1618,11 @@ body {
   color: #000000;
   font-weight: 400;
   border: none;
-  width: 160px;
+  width: 180px;
   cursor: pointer;
-  margin-right: 231px;
-  padding: 10px 7px 0 20px;
+  margin-right: 210px;
+  padding: 0 7px 0 20px;
+  top: 5px;
 }
 
 .sort-button {
@@ -2011,7 +2024,7 @@ body {
 .navigation-logo:focus, .search-form-field:focus, .navigation-button-login:focus, .navigation-button-id:focus, .navigation-link:focus, .basket-item:focus .basket-item-title,
 .basket-item-delete:focus, .basket-button-open:focus, .link-catalog:focus, .popover-catalog-item:focus, .link:focus, .slider-button:focus, .link-detailed:focus, .useful-info-button:focus,
 .info-button-active:focus, .delivery-order-button:focus, .link-about-us:focus, .phone-state:focus, .main-contacts-link:focus, .footer-logo:focus, .footer-contacts-address:focus, .navigation-item-footer:focus,
-.footer-social-link:focus, .htmlacademy-logo:focus, .breadcrumbs-link:focus, .catalog-filter-label:focus, .link-filter-catalog:focus, .select-control:focus,
+.footer-social-link:focus, .htmlacademy-logo:focus, .breadcrumbs-link:focus, .catalog-filter-label:focus, .button-filter-catalog:focus, .select-control:focus,
 .min:focus, .max:focus, .button-load:focus, .pagination-link:focus, .pagination-prev:focus, .pagination-next:focus, .modal-close-button:focus, .field-group-submit:focus, .slider-pagination-item:focus-visible,
 .category-product-list:focus-visible, .category-product-link:focus-visible {
   outline: 2px solid #AF4FFF;
@@ -2067,7 +2080,7 @@ body {
   opacity: 60%;
 }
 
-.field-group-submit:hover, .link-filter-catalog:hover, .main-contacts-link:hover, .useful-info-button:hover, .link-about-us:hover, .link-detailed:hover {
+.field-group-submit:hover, .button-filter-catalog:hover, .main-contacts-link:hover, .useful-info-button:hover, .link-about-us:hover, .link-detailed:hover {
   background-color: #FFE17F;
 }
 
@@ -2182,7 +2195,7 @@ body {
   background-color: #FFCC33;
 }
 
-.link-filter-catalog:active, .link-filter-catalog:active:before, .useful-info-button:active, .useful-info-button:active:before {
+.button-filter-catalog:active, .button-filter-catalog:active:before, .useful-info-button:active, .useful-info-button:active:before {
   background-color: #FFCC33;
   border-top: none;
 }
